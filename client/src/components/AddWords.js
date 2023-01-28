@@ -25,12 +25,12 @@ const AddWords = ({routeChange}) => {
             <div className="center-div-add-words" onSubmit={(e)=> onSubmitFunction(e)}>
                 <form className="add-words-form">
                     <input 
-                        type="text" placeholder="value" 
+                        type="text" placeholder="key" 
                         onChange={(e)=> setWord(e.target.value)}
                         value={word}
                     />
                     <input 
-                        type="text"placeholder="key"
+                        type="text"placeholder="value"
                         onChange={(e)=> setValue(e.target.value)}
                         value={value}
                     />
