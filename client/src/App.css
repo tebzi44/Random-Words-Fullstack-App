@@ -1,0 +1,196 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    font-family: "poppins", sans-serif;
+}
+
+
+/* >>>>>>>>>>> */
+.center-div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.center-key{
+    font-size: 50px;
+    color: #fff;
+    border: 3px solid purple;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: rgb(26, 2, 18);
+    margin-bottom: 10px;
+}
+.center-value{
+    font-size: 50px;
+    color: rgb(26, 2, 18);
+    border: 3px solid purple;
+    border-radius: 10px;
+    background-color: rgb(26, 2, 18);
+    padding: 5px 10px;
+}
+
+.center-value:hover{
+    background-color: rgb(26, 2, 18);
+    color: #fff;
+    border-color: #fff;
+}
+
+
+
+/* >>>>>>>>>>>>>>>>>> */
+.next-btn{
+    color: #fff;
+    border: 3px solid purple;
+    border-radius: 50px;
+    background-color: black;
+    cursor: pointer;
+    font-size: 30px;
+    margin:auto;
+    position: absolute;
+    bottom:0;
+    left:50%;
+    transform: translate( -50%,-50%);
+    padding: 10px;
+    transition: 0.5s;
+    filter: drop-shadow(0 0 7px rgb(85, 1, 85));
+    -webkit-text-stroke: 0.5px #fff;
+}
+.next-btn:hover{
+    background-color: rgb(26, 2, 18);
+    filter: drop-shadow(0 0 10px rgb(85, 1, 85)) brightness(1);
+}
+.next-btn:active{
+    transition: 0.1s;
+    color:rgb(7, 18, 114);
+}
+
+.add-btn{
+    color: #fff;
+    border: 3px solid purple;
+    border-radius: 50px;
+    background-color: black;
+    cursor: pointer;
+    font-size: 30px;
+    margin:auto;
+    position: absolute;
+    bottom:0;
+    right:20px;
+    transform: translate( -50%,-50%);
+    padding: 10px;
+    transition: 0.5s;
+    filter: drop-shadow(0 0 7px rgb(85, 1, 85));
+    -webkit-text-stroke: 0.5px #fff;
+}
+.add-btn:hover{
+    background-color: rgb(26, 2, 18);
+    filter: drop-shadow(0 0 10px rgb(85, 1, 85)) brightness(1);
+}
+.add-btn:active{
+    transition: 0.1s;
+    color:rgb(7, 18, 114);
+}
+/* >>>>>>>>>>>>>>>>>>>>>>> */
+
+/* images */
+.wrapper{
+    display: flex;
+    justify-content:space-around;
+}
+.img1{
+    width:300px;
+}
+.img2{
+    width:300px;
+}
+
+.link{
+    color: #fff;
+}
+
+/* add words   add words   add words   add words   add words  */
+.add-words-form input{
+    display: block;
+    color: #fff;
+    border: 3px solid purple;
+    border-radius: 50px;
+    background-color: black;
+    font-size: 30px;
+    padding: 10px;
+    transition: 0.5s;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+.add-words-form button{
+    color: #fff;
+    border: 3px solid purple;
+    border-radius: 50px;
+    background-color: black;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 10px 40px;
+    transition: 0.5s;
+    filter: drop-shadow(0 0 7px rgb(85, 1, 85));
+    -webkit-text-stroke: 0.5px #fff;
+    letter-spacing: 2px;
+}
+.add-words-form button:hover{
+    background-color: rgb(26, 2, 18);
+    filter: drop-shadow(0 0 10px rgb(85, 1, 85)) brightness(1);
+}
+.add-words-form button:active{
+    transition: 0.1s;
+    color:rgb(7, 18, 114);
+}
+.center-div-add-words{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
