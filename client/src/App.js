@@ -1,6 +1,8 @@
 import './App.css';
 import GetRandomWords from './components/GetRandomWords'
 import AddWords from './components/AddWords';
+import AllWords from './components/AllWords'
+
 import tarielOne from './img/tariel-1.jpg'
 import tarielTwo from './img/tariel-2.jpg'
 import {Routes, Route, useNavigate} from "react-router-dom"
@@ -18,6 +20,7 @@ function App() {
                 <Routes>
                   <Route exact path='/' element={<GetRandomWords routeChange={routeChange}/>}></Route>
                   <Route exact path='/add-words' element={<AddWords routeChange={routeChange}/>}></Route>
+                  <Route exact path='/all-words' element={<AllWords routeChange={routeChange}/>}></Route>
                 </Routes>
       </div>
     </div>

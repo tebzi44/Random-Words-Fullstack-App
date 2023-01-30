@@ -1,42 +1,3 @@
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 *{
     margin: 0;
@@ -47,7 +8,6 @@ body{
     background-color: black;
     font-family: "poppins", sans-serif;
 }
-
 
 /* >>>>>>>>>>> */
 .center-div{
@@ -74,16 +34,13 @@ body{
     background-color: rgb(26, 2, 18);
     padding: 5px 10px;
 }
-
 .center-value:hover{
     background-color: rgb(26, 2, 18);
     color: #fff;
     border-color: #fff;
 }
 
-
-
-/* >>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>Next button*/
 .next-btn{
     color: #fff;
     border: 3px solid purple;
@@ -110,32 +67,57 @@ body{
     color:rgb(7, 18, 114);
 }
 
-.add-btn{
+/* >>>>> routing button */
+.routing-right-side-btn{
+    position: absolute;
+    bottom:0;
+    right:10%;
+    transform: translateY( -50% );
     color: #fff;
     border: 3px solid purple;
     border-radius: 50px;
     background-color: black;
     cursor: pointer;
     font-size: 30px;
-    margin:auto;
-    position: absolute;
-    bottom:0;
-    right:20px;
-    transform: translate( -50%,-50%);
     padding: 10px;
     transition: 0.5s;
     filter: drop-shadow(0 0 7px rgb(85, 1, 85));
     -webkit-text-stroke: 0.5px #fff;
 }
-.add-btn:hover{
+.routing-right-side-btn:hover{
     background-color: rgb(26, 2, 18);
     filter: drop-shadow(0 0 10px rgb(85, 1, 85)) brightness(1);
 }
-.add-btn:active{
+.routing-right-side-btn:active{
     transition: 0.1s;
     color:rgb(7, 18, 114);
 }
-/* >>>>>>>>>>>>>>>>>>>>>>> */
+
+/* >>>>>> */
+.routing-left-side-btn{
+    position: absolute;
+    bottom:0;
+    left:10%;
+    transform: translateY( -50% );
+    color: #fff;
+    border: 3px solid purple;
+    border-radius: 50px;
+    background-color: black;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 10px;
+    transition: 0.5s;
+    filter: drop-shadow(0 0 7px rgb(85, 1, 85));
+    -webkit-text-stroke: 0.5px #fff;
+}
+.routing-left-side-btn:hover{
+    background-color: rgb(26, 2, 18);
+    filter: drop-shadow(0 0 10px rgb(85, 1, 85)) brightness(1);
+}
+.routing-left-side-btn:active{
+    transition: 0.1s;
+    color:rgb(7, 18, 114);
+}
 
 /* images */
 .wrapper{
@@ -148,12 +130,18 @@ body{
 .img2{
     width:300px;
 }
-
 .link{
     color: #fff;
 }
 
 /* add words   add words   add words   add words   add words  */
+.center-div-add-words{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
 .add-words-form input{
     display: block;
     color: #fff;
@@ -187,10 +175,61 @@ body{
     transition: 0.1s;
     color:rgb(7, 18, 114);
 }
-.center-div-add-words{
+
+/* all words  all words all words all words all words all words all words*/
+.allWords-wrapper {
+    background-color: blueviolet;
+    border-radius: 20px 10px 10px 20px;
     position: absolute;
+    width: 400px;
+    max-height: 400px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    transform: translate(-50%,-50%);
+    padding: 10px 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
+.allWords-wrapper::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+.allWords-wrapper::-webkit-scrollbar
+{
+    border-radius: 0 30px 30px 0;
+	width: 12px;
+	background-color: blueviolet;
+}
+.allWords-wrapper::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: purple;
+}
+.word-panel{
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.allWords-word-wrapper {
+    max-width: 170px;
+    overflow-x: auto;
+}
+.allWords-word-wrapper span {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 16px;
+}
+.allWords-button-wrapper button {    
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    border: 3px solid purple;
+    border-radius: 50px;
+    background-color: purple;
+    cursor: pointer;
+    padding: 5px 10px;
+} 

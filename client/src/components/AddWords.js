@@ -2,8 +2,8 @@ import axios from 'axios';
 import { useState } from 'react';
 
 const AddWords = ({routeChange}) => {
-    const [word, setWord] = useState()
-    const [value, setValue] = useState()
+    const [word, setWord] = useState('')
+    const [value, setValue] = useState('')
 
     const onSubmitFunction = (e) => {
         e.preventDefault()
@@ -14,12 +14,10 @@ const AddWords = ({routeChange}) => {
             })
         }
         postData()
-        
         setWord('')
         setValue('')
     }
-
-
+    
     return(
         <>
             <div className="center-div-add-words" onSubmit={(e)=> onSubmitFunction(e)}>
@@ -37,7 +35,8 @@ const AddWords = ({routeChange}) => {
                     <button type="submit">add</button>
                 </form>
             </div>
-            <button className="add-btn" onClick={() => routeChange('/')}>Back</button>
+            <button className="routing-left-side-btn" onClick={()=> routeChange('/all-words')}>all words</button>
+            <button className="routing-right-side-btn" onClick={() => routeChange('/')}>Back</button>
         </>
     )
 }

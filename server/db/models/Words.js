@@ -15,10 +15,10 @@ class Words extends Model {
           type: DataTypes.TIME,
           allowNull: false,
         },
-        deletedAt: {
-          type: DataTypes.TIME,
-          allowNull: true,
-        },
+        // deletedAt: {
+        //   type: DataTypes.TIME,
+        //   allowNull: true,
+        // },
     },
       {
         sequelize: connection,
