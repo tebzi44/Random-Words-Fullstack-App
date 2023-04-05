@@ -28,14 +28,14 @@ const GetRandomWords = ({routeChange}) => {
 
     return(
         <>
-          <div className="center-div">
+            <div className="center-div">
                  <div className="center-key">{word || 'როგორ ხარ ძმაკაცო?' }</div>
                  <div className="center-value">{value || 'თარგმანი'}</div>
-             </div>
+            </div>
             <button 
                 type="button" 
                 className="next-btn"
-                onClick={()=> changeWord()}
+                onClick={() => changeWord()}
                 >Next
             </button>
             <button className="routing-left-side-btn" onClick={()=> routeChange('/all-words')}>all words</button>

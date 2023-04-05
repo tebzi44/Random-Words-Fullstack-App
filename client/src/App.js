@@ -15,13 +15,13 @@ function App() {
   return (
     <div className="App">
       <div className="wrapper">
-                <img className="img1" src={tarielOne} alt="tarielOne"></img>
-                <img className="img2" src={tarielTwo} alt="tarielTwo"></img>
-                <Routes>
-                  <Route exact path='/' element={<GetRandomWords routeChange={routeChange}/>}></Route>
-                  <Route exact path='/add-words' element={<AddWords routeChange={routeChange}/>}></Route>
-                  <Route exact path='/all-words' element={<AllWords routeChange={routeChange}/>}></Route>
-                </Routes>
+          <img className="img1" src={tarielOne} alt="tarielOne"></img>
+          <img className="img2" src={tarielTwo} alt="tarielTwo"></img>
+          <Routes>
+            <Route exact path='/' element={<GetRandomWords routeChange={routeChange}/>}></Route>
+            <Route exact path='/add-words' element={<AddWords routeChange={routeChange}/>}></Route>
+            <Route exact path='/all-words' element={<AllWords routeChange={routeChange}/>}></Route>
+          </Routes>
       </div>
     </div>
   );
